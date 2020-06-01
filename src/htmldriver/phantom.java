@@ -2,7 +2,6 @@ package htmldriver;
 import java.io.File;
 import java.util.List;
 import java.lang.Thread;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -45,6 +44,7 @@ public class phantom {
 		}
 		
 		public static void getIP() throws Exception {
+			
 			File file = new File("/Users/gamze/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");				
             System.setProperty("phantomjs.binary.path", file.getAbsolutePath());		
             WebDriver driver = new PhantomJSDriver();	
@@ -69,8 +69,8 @@ public class phantom {
 	    }
 		public static void main(String[] args) throws Exception {
         	        
-					getKargoPrice();
-                    getIP();
+			getKargoPrice();
+            getIP();
                                  			
            }	
 }
